@@ -5,8 +5,8 @@
 		"Tags": ["fzf"],
 		"Versions": [
 			{
-				"Version": "1.0.1",
-				"Url": "https://github.com/user/samdmarshall/micro-fzf-plugin/archive/v1.0.1.zip",
+				"Version": "1.0.2",
+				"Url": "https://github.com/samdmarshall/micro-fzf-plugin/archive/v1.0.2.zip",
 				"Require": {
 					"micro": ">=1.1.2",
 					"fzf": ">=0.15.9"
