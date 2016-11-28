@@ -1,4 +1,4 @@
-VERSION = "1.0.4"
+VERSION = "1.0.5"
 
 MakeCommand("fzf", "fzf.fzf", 0)
 
@@ -16,14 +16,13 @@ function reportedExitCode(string_value)
 end
 
 function fzf()
-	CurView():Save(false)
-	local fzf_output = HandleShellCommand("fzf", true, false)
-	if not reportedExitCode(fzf_output) then
-		local desired_path = removeNewlines(fzf_output)
-		local working_path = removeNewlines(HandleShellCommand("pwd", false, false))
-		local selected_path = working_path .. desired_path
-		CurView():Open(selected_path)
-		messenger:Message("Opened "..selected_path)
+	if CurView():CanClose() then
+		local fzf_output = HandleShellCommand("fzf", true, false)
+		if not reportedExitCode(fzf_output) then
+			local desired_path = removeNewlines(fzf_output)
+			CurView():Open(desired_path)
+			messenger:Message("Opened "..desired_path)
+		end
 	end
 end
 
