@@ -1,7 +1,6 @@
 # About the fzf plugin
 
-This plugin 
-
+This plugin provides support for opening files via [fzf](https://github.com/junegunn/fzf).
 # Commands
 
 The plugin providies the following commands:
