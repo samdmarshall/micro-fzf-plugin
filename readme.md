@@ -1,6 +1,6 @@
 # fzf plugin for micro
 
-This repository holds the [fzf](https://github.com/junegunn/fzf) plugin for [micro](https://github.com/zyedidia/micro)
+Forked version of [fzf](https://github.com/junegunn/fzf)
 
 # Troubleshooting
 
